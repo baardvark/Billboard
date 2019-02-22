@@ -1,6 +1,8 @@
 <h1>Billboard</h1>
 <div class="ui card">
   <div class="image">
+ <button class="ui basic button"><i class="icon music"></i><%= link_to 'Add Songs', new_song_path(@board)%></button>
+</h1>
   
   </div>
   <div class="content">
@@ -13,4 +15,6 @@
     <%= link_to 'Edit', edit_board_path(@board) %> |
     <%= link_to 'Back', boards_path %>
   </div>
+    <div class="ui basic red button">
+    <%= link_to 'Delete', [@board, @song], method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>

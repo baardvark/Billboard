@@ -1,10 +1,11 @@
-<%= form_with(model: song, local: true, class: "ui form") do |f| %>
-  <div class="field">
+
+<h1>Add A Song</h1>
+<%= form_for [@board, @song] do |f| %>
     <%= f.label :title %>
-    <%= f.text_field :title, required: true, placeholder: "Title" %>
-  </div>
-  <div class="field">
-    <%= f.label :album %>
-    <%= f.text_field :album, required: true, placeholder: "Album" %>
-  </div>
+    <%= f.text_field :title, required: true, placeholder: 'Song Name' %>
+    <br />
+    <%= f.label :album%>
+    <%= f.text_field :album, placeholder: 'Album' %>
+    <br />
+    <%= f.submit %>
 <% end %>
