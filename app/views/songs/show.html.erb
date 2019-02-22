@@ -1,0 +1,19 @@
+<h1>Song</h1>
+<div class="ui card">
+  <div class="image">
+  
+  </div>
+  <div class="content">
+    <p class="header">
+      <%= @song.title %>
+    </p>
+    </div>
+  </div>
+   <div class="meta">
+      <span class="album"><%= @artist.album %></span>
+    </div>
+  <div class="extra content">
+    <%= link_to 'Edit', edit_song_path(@song) %> |
+    <%= link_to 'Back', songs_path %>
+  </div>
+</div>

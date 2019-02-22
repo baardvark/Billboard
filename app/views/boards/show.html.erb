@@ -1,0 +1,16 @@
+<h1>Billboard</h1>
+<div class="ui card">
+  <div class="image">
+  
+  </div>
+  <div class="content">
+    <p class="header">
+      <%= @board.title %>
+    </p>
+    </div>
+  </div>
+  <div class="extra content">
+    <%= link_to 'Edit', edit_board_path(@board) %> |
+    <%= link_to 'Back', boards_path %>
+  </div>
+</div>
