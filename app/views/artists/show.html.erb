@@ -9,6 +9,7 @@
     </p>
   </div>
   <div class="extra content">
+    <%= link_to 'New Song' new_artist_song_path(@artist), class: "ui button blue" %>
     <%= link_to 'Edit', edit_artist_path(@artist) %> |
     <%= link_to 'Back', artists_path %>
   </div>

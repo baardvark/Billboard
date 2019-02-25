@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root 'boards#index'
 
   resources :boards do
-    resources :artists
+    resources :artists do
+    end
   end
 
   resources :artists do

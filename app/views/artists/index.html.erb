@@ -1,10 +1,10 @@
 
 <h1 class="ui header">Artists</h1>
-<%= link_to 'New Artist', new_artist_path %>
+<%= link_to 'New Artist', new_board_artists_path(@board) %>
 <div class="ui divider"></div>
 
 <div class="ui grid">
-  <% @artist.each do |artist| %>
+  <% @artists.each do |artist| %>
     <div class="sixteen wide mobile eight wide tablet four wide computer column">
       <div class="ui card">
         <div class="image">
@@ -27,3 +27,4 @@
     </div>
   <% end %>
 </div>
+
